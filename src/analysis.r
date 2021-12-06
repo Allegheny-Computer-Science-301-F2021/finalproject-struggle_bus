@@ -18,6 +18,7 @@ rm(list = ls()) # remove variables stored in memory.
 library(tidyverse)
 #install.packages("psych")
 library(psych)
+library(ggplot2)
 
 # add your code here. Be sure to leave your data file(s) in the data/ directory of this repository.
 
@@ -53,6 +54,17 @@ View(data2005)
 ggplot(data = data2005, mapping = aes(x = "country", y = "TPOV08_FOOD", color = "MPOV08_FOOD")) 
 # dis does not work lol :) come back to it later
 
+# How did monthly food expenditures differ between people of different genders and from different African countries in 2005?
 
+ggplot(data2005, aes(x=as.factor(country), fill=as.factor(country) )) + 
+  geom_bar( ) +
+  scale_fill_brewer(palette = "Set1") +
+  theme(legend.position="none")
+# randombar chart, i dont think this does anything lol
+
+ggplot(data2005, aes(x=country, y=MPOV08_FOOD)) + 
+  labs(subtitle = "Monthly Food Expenditures by Males (2005)",
+       y = "Monthly Food Expenditure in 2011 PPP$", 
+       x = "Country", title = "Scatterplot")
 
 # (Did you remember to add your name to this script?)
