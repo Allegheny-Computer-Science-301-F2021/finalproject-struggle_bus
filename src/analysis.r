@@ -120,7 +120,7 @@ ggplot(data = data2012) + geom_point(mapping = aes(x = country, y = MPOV08_NFOOD
 headcountRatio_190_2012 <- dat %>% select(country, year, MPOV08_PT190, FPOV08_PT190) %>% filter(year == 2012)
 
 # at $1.90/day PPP
-ggplot(data = headcountRatio_190_2005) + geom_point(mapping = aes(x = country, y = MPOV08_PT190), color = "blue") +
+ggplot(data = headcountRatio_190_2012) + geom_point(mapping = aes(x = country, y = MPOV08_PT190), color = "blue") +
   geom_point(mapping=aes(x=country, y = FPOV08_PT190), color = "red") + 
   labs(subtitle = "2012",
        y = "Poverty Headcount Ratio (%)", 
@@ -133,7 +133,7 @@ View(headcount_190_2012)
 
 # at $1.90/day PPP
 ggplot(data = headcount_190_2012) + geom_point(mapping = aes(x = country, y = MPOV08_PN190), color = "blue") +
-  geom_point(mapping=aes(x=country, y = FPOV08_PN190), color = "red") + ylim() +
+  geom_point(mapping=aes(x=country, y = FPOV08_PN190), color = "red") +
   labs(subtitle = "2012",
        y = "Poverty Headcount (# of people)", 
        x = "Country", title = "Poverty Headcount by country")
