@@ -73,20 +73,9 @@ View(data2005)
 
 # How did monthly food expenditures differ between people of different genders and from different African countries in 2005?
 ggplot(data = data2005) + geom_point(mapping = aes(x = country, y = MPOV08_FOOD), color = "blue") +
-  geom_point(mapping=aes(x=country, y = FPOV08_FOOD), color = "red")
-# dis does not work lol :) come back to it later
-
-# How did monthly food expenditures differ between people of different genders and from different African countries in 2005?
-
-ggplot(data2005, aes(x=as.factor(country), fill=as.factor(country) )) + 
-  geom_bar( ) +
-  scale_fill_brewer(palette = "Set1") +
-  theme(legend.position="none")
-# randombar chart, i dont think this does anything lol
-
-ggplot(data2005, aes(x=country, y=MPOV08_FOOD)) + 
-  labs(subtitle = "Monthly Food Expenditures by Males (2005)",
+  geom_point(mapping=aes(x=country, y = FPOV08_FOOD), color = "red") + 
+  labs(subtitle = "Monthly Food Expenditures (2005)",
        y = "Monthly Food Expenditure in 2011 PPP$", 
-       x = "Country", title = "Scatterplot")
+       x = "Country", title = "Plot")
 
 # (Did you remember to add your name to this script?)
