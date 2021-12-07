@@ -71,6 +71,28 @@ ggplot(data = data2005) + geom_point(mapping = aes(x = country, y = MPOV08_NFOOD
        y = "Monthly Non-Food Expenditure in 2011 PPP$", 
        x = "Country", title = "Monthly Non-Food Expenditures")
 
+# How did the poverty headcount ratio differ between people of different genders and from different African countries in 2005?
+headcountRatio_190_2005 <- dat %>% select(country, year, MPOV08_PT190, FPOV08_PT190) %>% filter(year == 2005)
+
+# at $1.90/day PPP
+ggplot(data = headcountRatio_190_2005) + geom_point(mapping = aes(x = country, y = MPOV08_PT190), color = "blue") +
+  geom_point(mapping=aes(x=country, y = FPOV08_PT190), color = "red") + 
+  labs(subtitle = "2005",
+       y = "Poverty Headcount Ratio (%)", 
+       x = "Country", title = "Poverty Headcount Ratio (%) by country")
+
+# How did the poverty headcount differ between people of different genders and from different African countries in 2005?
+headcount_190_2005 <- dat %>% select(country, year, MPOV08_PN190, FPOV08_PN190) %>% filter(year == 2005)
+
+# at $1.90/day PPP
+ggplot(data = headcount_190_2005) + geom_point(mapping = aes(x = country, y = MPOV08_PN190), color = "blue") +
+  geom_point(mapping=aes(x=country, y = FPOV08_PN190), color = "red") + 
+  labs(subtitle = "2005",
+       y = "Poverty Headcount (# of people)", 
+       x = "Country", title = "Poverty Headcount by country")
+
+
+
 #################################################
 #### 2012 Survey Year Analysis
 #################################################
@@ -93,6 +115,28 @@ ggplot(data = data2012) + geom_point(mapping = aes(x = country, y = MPOV08_NFOOD
   labs(subtitle = "2012",
        y = "Monthly Non-Food Expenditure in 2011 PPP$", 
        x = "Country", title = "Monthly Non-Food Expenditures")
+
+# How did the poverty headcount ratio differ between people of different genders and from different African countries in 2012?
+headcountRatio_190_2012 <- dat %>% select(country, year, MPOV08_PT190, FPOV08_PT190) %>% filter(year == 2012)
+
+# at $1.90/day PPP
+ggplot(data = headcountRatio_190_2005) + geom_point(mapping = aes(x = country, y = MPOV08_PT190), color = "blue") +
+  geom_point(mapping=aes(x=country, y = FPOV08_PT190), color = "red") + 
+  labs(subtitle = "2012",
+       y = "Poverty Headcount Ratio (%)", 
+       x = "Country", title = "Poverty Headcount Ratio (%) by country")
+
+# How did the poverty headcount differ between people of different genders and from different African countries in 2005?
+headcount_190_2012 <- dat %>% select(country, year, MPOV08_PN190, FPOV08_PN190) %>% filter(year == 2012)
+
+View(headcount_190_2012)
+
+# at $1.90/day PPP
+ggplot(data = headcount_190_2012) + geom_point(mapping = aes(x = country, y = MPOV08_PN190), color = "blue") +
+  geom_point(mapping=aes(x=country, y = FPOV08_PN190), color = "red") + ylim() +
+  labs(subtitle = "2012",
+       y = "Poverty Headcount (# of people)", 
+       x = "Country", title = "Poverty Headcount by country")
 
 
 # (Did you remember to add your name to this script?)
