@@ -78,4 +78,15 @@ ggplot(data = data2005) + geom_point(mapping = aes(x = country, y = MPOV08_FOOD)
        y = "Monthly Food Expenditure in 2011 PPP$", 
        x = "Country", title = "Plot")
 
+data2012 <- dat %>% select(country, year, MPOV08_PT190, FPOV08_PT190, MPOV08_PT310, FPOV08_PT310, MPOV08_FOOD, FPOV08_FOOD) %>% filter(year == 2012)
+
+ggplot(data = data2012) + geom_point(mapping = aes(x = country, y = MPOV08_FOOD), color = "blue") +
+  geom_point(mapping=aes(x=country, y = FPOV08_FOOD), color = "red") + 
+  labs(subtitle = "Monthly Food Expenditures (2012)",
+       y = "Monthly Food Expenditure in 2011 PPP$", 
+       x = "Country", title = "Plot")
+
+# How did monthly food expenditures differ between people of different genders and from different African countries in 2012?
+
+
 # (Did you remember to add your name to this script?)
