@@ -46,12 +46,16 @@ View(dat)
 #################################################
 
 # creating new variable with necessary data points for analysis
-data2005 <- dat %>% select(country, year, MPOV08_FOOD, FPOV08_FOOD, TPOV08_FOOD) %>% filter(year == 2005)
+data2005 <- dat %>% select(country, year, MPOV08_PT190, FPOV08_PT190, MPOV08_PT310, FPOV08_PT310, MPOV08_FOOD, FPOV08_FOOD) %>% filter(year == 2005)
+
+# looking at correlation
+pairs.panels(data2005)
 
 View(data2005)
 
-# How did monthly food expenditures differ amongst men (earning at or below 2011 $ PPP) of different African countries surveyed in 2005?
-ggplot(data = data2005, mapping = aes(x = "country", y = "TPOV08_FOOD", color = "MPOV08_FOOD")) 
+# How did monthly food expenditures differ between people of different genders and from different African countries in 2005?
+ggplot(data = data2005) + geom_point(mapping = aes(x = country, y = MPOV08_FOOD), color = "blue") +
+  geom_point(mapping=aes(x=country, y = FPOV08_FOOD), color = "red")
 # dis does not work lol :) come back to it later
 
 # How did monthly food expenditures differ between people of different genders and from different African countries in 2005?
