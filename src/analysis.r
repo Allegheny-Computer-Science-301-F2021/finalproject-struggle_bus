@@ -78,6 +78,13 @@ ggplot(data = data2005) + geom_point(mapping = aes(x = country, y = MPOV08_FOOD)
        y = "Monthly Food Expenditure in 2011 PPP$", 
        x = "Country", title = "Monthly Food Expenditures")
 
+# How did monthly nonfood expenditures differ between people of different genders and from different African countries in 2005?
+ggplot(data = data2005) + geom_point(mapping = aes(x = country, y = MPOV08_NFOOD), color = "blue") +
+  geom_point(mapping=aes(x=country, y = FPOV08_NFOOD), color = "red") + 
+  labs(subtitle = "2005",
+       y = "Monthly Non-Food Expenditure in 2011 PPP$", 
+       x = "Country", title = "Monthly Non-Food Expenditures")
+
 #################################################
 #### 2012 Survey Year Analysis
 #################################################
@@ -85,13 +92,19 @@ ggplot(data = data2005) + geom_point(mapping = aes(x = country, y = MPOV08_FOOD)
 # creating new variable with necessary data points for analysis
 data2012 <- dat %>% select(country, year, MPOV08_FOOD, FPOV08_FOOD, MPOV08_NFOOD, FPOV08_NFOOD) %>% filter(year == 2012)
 
+# How did monthly food expenditures differ between people of different genders and from different African countries in 2012?
 ggplot(data = data2012) + geom_point(mapping = aes(x = country, y = MPOV08_FOOD), color = "blue") +
   geom_point(mapping=aes(x=country, y = FPOV08_FOOD), color = "red") + 
   labs(subtitle = "2012",
        y = "Monthly Food Expenditure in 2011 PPP$", 
        x = "Country", title = "Monthly Food Expenditures")
 
-# How did monthly food expenditures differ between people of different genders and from different African countries in 2012?
+# How did monthly non-food expenditures differ between people of different genders and from different African countries in 2012?
+ggplot(data = data2012) + geom_point(mapping = aes(x = country, y = MPOV08_NFOOD), color = "blue") +
+  geom_point(mapping=aes(x=country, y = FPOV08_NFOOD), color = "red") + 
+  labs(subtitle = "2012",
+       y = "Monthly Non-Food Expenditure in 2011 PPP$", 
+       x = "Country", title = "Monthly Non-Food Expenditures")
 
 
 # (Did you remember to add your name to this script?)
