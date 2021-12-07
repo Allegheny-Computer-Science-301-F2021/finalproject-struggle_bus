@@ -9,17 +9,35 @@
 rm(list = ls()) # remove variables stored in memory.
 
 
+<<<<<<< HEAD
+# If you want to remove all previous plots and clear the console, run the following two lines.
+graphics.off() # clear out all plots from previous work.
+
+cat("\014") # clear the console
+=======
 #################################################
 #### Setup your common libraries
 #################################################
+>>>>>>> 08a68e3efc8db27298b47cc5d755ce7de5bf2a7d
 
 # add your libraries here
 
 library(tidyverse)
+<<<<<<< HEAD
+
+# If needed, install psych package 
+# install.packages("psych")
+=======
 #install.packages("psych")
+>>>>>>> 08a68e3efc8db27298b47cc5d755ce7de5bf2a7d
 library(psych)
 library(ggplot2)
 
+#Selecting the file
+myFile  <- file.choose() # pick the csv filename
+myData <- read.csv(myFile) # load the data
+
+view(myData)
 # add your code here. Be sure to leave your data file(s) in the data/ directory of this repository.
 
 # Selecting the file
