@@ -50,47 +50,39 @@ View(dat)
 #################################################
 
 # creating new variable with necessary data points for analysis
-data2005 <- dat %>% select(country, year, MPOV08_FOOD, FPOV08_FOOD, MPOV08_NFOOD, FPOV08_NFOOD) %>% filter(year == 2005)
+# filtering for the year 2005, and filtering Uganda's results for Food expenditures, as there are no data points for these variables in the original data set
+data2005_Spend <- dat %>% select(country, year, MPOV08_FOOD, FPOV08_FOOD, MPOV08_NFOOD, FPOV08_NFOOD) %>% filter(year == 2005 & country != "Uganda")
 
 # looking at correlation
-pairs.panels(data2005)
+pairs.panels(data2005_Spend)
 
-View(data2005)
+
+# view data
+View(data2005_Spend)
 
 # How did monthly food expenditures differ between people of different genders and from different African countries in 2005?
-ggplot(data = data2005) + geom_point(mapping = aes(x = country, y = MPOV08_FOOD), color = "blue") +
+ggplot(data = data2005_Spend) + geom_point(mapping = aes(x = country, y = MPOV08_FOOD), color = "blue") +
   geom_point(mapping=aes(x=country, y = FPOV08_FOOD), color = "red") + 
   labs(subtitle = "2005",
        y = "Monthly Food Expenditure in 2011 PPP$", 
        x = "Country", title = "Monthly Food Expenditures")
 
 # How did monthly nonfood expenditures differ between people of different genders and from different African countries in 2005?
-ggplot(data = data2005) + geom_point(mapping = aes(x = country, y = MPOV08_NFOOD), color = "blue") +
+ggplot(data = data2005_Spend) + geom_point(mapping = aes(x = country, y = MPOV08_NFOOD), color = "blue") +
   geom_point(mapping=aes(x=country, y = FPOV08_NFOOD), color = "red") + 
   labs(subtitle = "2005",
        y = "Monthly Non-Food Expenditure in 2011 PPP$", 
        x = "Country", title = "Monthly Non-Food Expenditures")
 
 # How did the poverty headcount ratio differ between people of different genders and from different African countries in 2005?
-headcountRatio_190_2005 <- dat %>% select(country, year, MPOV08_PT190, FPOV08_PT190) %>% filter(year == 2005)
+data2005_Poverty <- dat %>% select(country, year, MPOV08_PT190, FPOV08_PT190, MPOV08_PT310, FPOV08_PT310) %>% filter(year == 2005)
 
 # at $1.90/day PPP
-ggplot(data = headcountRatio_190_2005) + geom_point(mapping = aes(x = country, y = MPOV08_PT190), color = "blue") +
+ggplot(data = data2005_Poverty) + geom_point(mapping = aes(x = country, y = MPOV08_PT190), color = "blue") +
   geom_point(mapping=aes(x=country, y = FPOV08_PT190), color = "red") + 
   labs(subtitle = "2005",
        y = "Poverty Headcount Ratio (%)", 
        x = "Country", title = "Poverty Headcount Ratio (%) by country")
-
-# How did the poverty headcount differ between people of different genders and from different African countries in 2005?
-headcount_190_2005 <- dat %>% select(country, year, MPOV08_PN190, FPOV08_PN190) %>% filter(year == 2005)
-
-# at $1.90/day PPP
-ggplot(data = headcount_190_2005) + geom_point(mapping = aes(x = country, y = MPOV08_PN190), color = "blue") +
-  geom_point(mapping=aes(x=country, y = FPOV08_PN190), color = "red") + 
-  labs(subtitle = "2005",
-       y = "Poverty Headcount (# of people)", 
-       x = "Country", title = "Poverty Headcount by country")
-
 
 
 #################################################
@@ -98,45 +90,70 @@ ggplot(data = headcount_190_2005) + geom_point(mapping = aes(x = country, y = MP
 #################################################
 
 # creating new variable with necessary data points for analysis
-data2012 <- dat %>% select(country, year, MPOV08_FOOD, FPOV08_FOOD, MPOV08_NFOOD, FPOV08_NFOOD) %>% filter(year == 2012)
+data2012_Spend <- dat %>% select(country, year, MPOV08_FOOD, FPOV08_FOOD, MPOV08_NFOOD, FPOV08_NFOOD) %>% filter(year == 2012 & country != "Uganda")
 
-View(data2012)
+View(data2012_Spend)
 
 # How did monthly food expenditures differ between people of different genders and from different African countries in 2012?
-ggplot(data = data2012) + geom_point(mapping = aes(x = country, y = MPOV08_FOOD), color = "blue") +
+ggplot(data = data2012_Spend) + geom_point(mapping = aes(x = country, y = MPOV08_FOOD), color = "blue") +
   geom_point(mapping=aes(x=country, y = FPOV08_FOOD), color = "red") + 
   labs(subtitle = "2012",
        y = "Monthly Food Expenditure in 2011 PPP$", 
        x = "Country", title = "Monthly Food Expenditures")
 
 # How did monthly non-food expenditures differ between people of different genders and from different African countries in 2012?
-ggplot(data = data2012) + geom_point(mapping = aes(x = country, y = MPOV08_NFOOD), color = "blue") +
+ggplot(data = data2012_Spend) + geom_point(mapping = aes(x = country, y = MPOV08_NFOOD), color = "blue") +
   geom_point(mapping=aes(x=country, y = FPOV08_NFOOD), color = "red") + 
   labs(subtitle = "2012",
        y = "Monthly Non-Food Expenditure in 2011 PPP$", 
        x = "Country", title = "Monthly Non-Food Expenditures")
 
 # How did the poverty headcount ratio differ between people of different genders and from different African countries in 2012?
-headcountRatio_190_2012 <- dat %>% select(country, year, MPOV08_PT190, FPOV08_PT190) %>% filter(year == 2012)
+data2012_Poverty <- dat %>% select(country, year, MPOV08_PT190, FPOV08_PT190) %>% filter(year == 2012)
 
 # at $1.90/day PPP
-ggplot(data = headcountRatio_190_2012) + geom_point(mapping = aes(x = country, y = MPOV08_PT190), color = "blue") +
+ggplot(data = data2012_Poverty) + geom_point(mapping = aes(x = country, y = MPOV08_PT190), color = "blue") +
   geom_point(mapping=aes(x=country, y = FPOV08_PT190), color = "red") + 
   labs(subtitle = "2012",
        y = "Poverty Headcount Ratio (%)", 
        x = "Country", title = "Poverty Headcount Ratio (%) by country")
 
-# How did the poverty headcount differ between people of different genders and from different African countries in 2005?
-headcount_190_2012 <- dat %>% select(country, year, MPOV08_PN190, FPOV08_PN190) %>% filter(year == 2012)
 
-View(headcount_190_2012)
+#################################################
+#### Multi-Year Analysis
+#################################################
 
-# at $1.90/day PPP
-ggplot(data = headcount_190_2012) + geom_point(mapping = aes(x = country, y = MPOV08_PN190), color = "blue") +
-  geom_point(mapping=aes(x=country, y = FPOV08_PN190), color = "red") +
-  labs(subtitle = "2012",
-       y = "Poverty Headcount (# of people)", 
-       x = "Country", title = "Poverty Headcount by country")
+# Ethiopia
+
+dataEthiopia <- dat %>% select(country, year, MPOV08_FOOD, FPOV08_FOOD, MPOV08_NFOOD, FPOV08_NFOOD, MPOV08_PT190, FPOV08_PT190) %>% filter(country == "Ethiopia")
+
+View(dataEthiopia)
+
+# How did monthly food expenditures differ between people of different genders in Ethiopia during the years 2010 and 2012?
+ggplot(data = dataEthiopia) + geom_point(mapping = aes(x = year, y = MPOV08_FOOD), color = "blue") +
+  geom_point(mapping=aes(x=year, y = FPOV08_FOOD), color = "red") + xlim(2008, 2013) +
+  labs(subtitle = "For 2010 and 2012",
+       y = "Monthly Food Expenditure in 2011 PPP$", 
+       x = "Country", title = "Monthly Food Expenditures in Ethiopia by Gender")
+
+# How did monthly non-food expenditures differ between people of different genders in Ethiopia in 2010 and 2012?
+ggplot(data = dataEthiopia) + geom_point(mapping = aes(x = year, y = MPOV08_NFOOD), color = "blue") +
+  geom_point(mapping=aes(x=year, y = FPOV08_NFOOD), color = "red") + xlim(2008, 2013) +
+  labs(subtitle = "For 2010 and 2012",
+       y = "Monthly Non-Food Expenditure in 2011 PPP$", 
+       x = "Country", title = "Monthly Non-Food Expenditures in Ethiopia by Gender")
+
+# How did the poverty headcount ratio differ between people of different genders in Ethiopia in 2000, 2010, 2012?
+
+ggplot(data = dataEthiopia) + geom_point(mapping = aes(x = year, y = MPOV08_PT190), color = "blue") +
+  geom_point(mapping=aes(x=year, y = FPOV08_PT190), color = "red") + 
+  labs(subtitle = "For 2000, 2010, and 2012",
+       y = "Poverty Headcount Ratio (%)", 
+       x = "Country", title = "Poverty Headcount Ratio (%) in Ethiopia by Gender")
+
+
+
+
 
 
 # (Did you remember to add your name to this script?)
