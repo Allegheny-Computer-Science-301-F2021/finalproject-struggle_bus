@@ -48,7 +48,20 @@ This plot displays the poverty headcount ratio by country for those countries su
 
 
 
-For our Multi-Year Analysis, we selected four different countries with survey data spanning several years, in order to see if there were any changes throughout the years to the three variables we have been studying throughout our analysis: monthly food expenditures, monthly non-food expenditures, poverty headcount ratio. Our countries of study were Ethiopia, Malawi, Madagascar, and Senegal and we studied them in a similar way to how we did our previous analysis, which looked at different countries with data in the same survey year. For our analysis of Ethiopia, we first made a variable called dataEthiopia
+For our Multi-Year Analysis, we selected four different countries with survey data spanning several years, in order to see if there were any changes throughout the years to the three variables we have been studying throughout our analysis: monthly food expenditures, monthly non-food expenditures, poverty headcount ratio. Our countries of study were Ethiopia, Malawi, Madagascar, and Senegal and we studied them in a similar way to how we did our previous analysis, which looked at different countries with data in the same survey year.
+
+For our analysis of Ethiopia, we first made a variable called dataEthiopia which we used to refine our dataset using filter() to only include data points representing Ethiopia. We then used ggplot, like our previous analysis, to answer three questions: 
+How did monthly food expenditures differ between people of different genders in Ethiopia during the years 2010 and 2012? 
+![Ethiopia Multi Year Analysis of Monthly Food Expenditures](writing/multiyrEthiopia_Food.png)
+
+
+How did monthly non-food expenditures differ between people of different genders in Ethiopia in 2010 and 2012?
+![Ethiopia Multi Year Analysis of Monthly Non-Food Expenditures](writing/multiyrEthiopia_NFood.png)
+
+
+How did the poverty headcount ratio differ between people of different genders in Ethiopia in 2000, 2010, 2012?
+![Ethiopia Multi Year Analysis of Monthly Food Expenditures](writing/multiyrEthiopia_headct.png)
+
 
 
 
