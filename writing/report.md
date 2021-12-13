@@ -62,7 +62,7 @@ For our analysis of Ethiopia, we first made a variable called dataEthiopia which
 - **How did the poverty headcount ratio differ between people of different genders in Ethiopia change between 2000, 2010, 2012?**
 ![Ethiopia Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrEthiopia_headct.png)
 
- Based on this graph, we can see that in 200, men and women were pretty evenly dispersed between 30-80% of those populations living below the poverty line. In 2010, we see that poverty rates have dropped for both men and women, with men showing a bigger rise in poverty rate, with the highest point being at 50%. Then in 2012, we see an increase in poverty rates for both men and women, with women representing the highest levels of poverty. 
+ Based on this graph, we can see that in 200, men and women were pretty evenly dispersed between 30-80% of those populations living below the poverty line. In 2010, we see that poverty rates have dropped for both men and women, with men showing a bigger rise in poverty rate, with the highest point being at 50%. Then in 2012, we see an increase in poverty rates for both men and women, with women representing the highest levels of poverty.
 
 Malawi
 
@@ -83,35 +83,42 @@ Malawi
 
 Madagascar
 
-- **How did monthly food expenditures between people of different genders in Madagascar change between the years 2004 and 2010?** 
+- **How did monthly food expenditures between people of different genders in Madagascar change between the years 2001, 2005, and 2010?**
 ![Madagascar Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrMadagascar_Food.png)
 
+ In 2001, men seem to spend more than women on food, in 2005, both women and men seem to spend the same on food, and in 2010, women seem to spend a little bit more than men on average. We also see the ranges of  food expenditures change between the years with points lying between $20-$45/month in 2001, $25-$50/month in 2005, and $0-$48/month in 2010.
 
-- **How did monthly non-food expenditures differ between people of different genders in Madagascar change between 2004 and 2010?**
+- **How did monthly non-food expenditures differ between people of different genders in Madagascar change between 2001, 2005, and 2010?**
 ![Madagascar Multi Year Analysis of Monthly Non-Food Expenditures](/writing/multiyrMadagascar_NFood.png)
 
+ Based on the graph, it seems that women spend more than men on non-food expenditures across all survey years. Additionally, the range across all of the years plotted, has points lying between $0-$40, with a majority of points lying under $20/month for survey years 2001 and 2010.
 
-- **How did the poverty headcount ratio differ between people of different genders in Madagascar change between 1998, 2004, and 2010?**
+- **How did the poverty headcount ratio differ between people of different genders in Madagascar change between 2001, 2005, and 2010?**
 ![Madagascar Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrMadagascar_headct.png)
 
+ Based on the graph, we can see that across all of the survey years, that men and women tend to have similar rates of poverty. in 2001 and 2005, points range from 0%-90% living below the poverty line and in 2010, the range shifts to 55%-100%.
 
 Senegal
 
-- **How did monthly food expenditures between people of different genders in Senegal change between the years 2004 and 2010?** 
+- **How did monthly food expenditures between people of different genders in Senegal change between the years 2001, 2005, and 2011?** 
 ![Senegal Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrSenegal_Food.png)
 
+ Based on the graph, we can see that across all survey years, women tend to spend more than men on food expenditures. In 2001, most points lied between the $10-$35/month, in 2005 this range shifted to $25-$50, and in 2011 it increased to $35-$60/month.
 
-- **How did monthly non-food expenditures differ between people of different genders in Senegal change between 2004 and 2010?**
+- **How did monthly non-food expenditures differ between people of different genders in Senegal change between 2001, 2005, and 2011?**
 ![Madagascar Multi Year Analysis of Monthly Non-Food Expenditures](/writing/multiyrSenegal_NFood.png)
 
+Based on the graph, we can see that across all survey years, women tend to spend more than men on non-food expenditures. Across all the years plotted, the majority of points for these expenses was anywhere between $5-$45/month range.
 
-- **How did the poverty headcount ratio differ between people of different genders in Senegal change between 1998, 2004, and 2010?**
+
+- **How did the poverty headcount ratio differ between people of different genders in Senegal change between 2001, 2005, and 2011?**
 ![Madagascar Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrSenegal_headct.png)
 
+Based on this graph, we can see that across all survey years, men tend to experience higher rates of poverty than women. The range of poverty in 2001 was anywhere between 45%-100%, in 2005 was anywhere 5%-80%, and in 2011 was anywhere between 0%-75% of the population living below the poverty line.
 
 Conclusion
 
-Based on the graphs, women spend more money on monthly food expenditures than men do. Additionally, males and females spend the same amount of money on non food expenditures.  Based on the poverty headcount ratio graph, men are more likely to be below the international poverty line than women are. 
+Based on the graphs, women spend more money on monthly food expenditures than men do. Additionally, males and females spend the same amount of money on non food expenditures.  Based on the poverty headcount ratio graph, men are more likely to be below the international poverty line than women are. The multi-year analysis we completed for Ethiopia, Malawi, Madagascar, and Senegal all showed varying results, all showing improvements in the poverty rate and increases in both food and non-food expenditures. There were also shifts of influence from some spending being male dominated and shifting to being female dominated and vice versa, which is further detailed under each of the respective plots in the prior section.
 
 
 
