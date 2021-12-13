@@ -85,9 +85,8 @@ Malawi
 
 Conclusion
 
-```
-TODO
-```
+Based on the graphs, women spend more money on monthly food expenditures than men do. Additionally, males and females spend the same amount of money on non food expenditures.  Based on the poverty headcount ratio graph, men are more likely to be below the international poverty line than women are. 
+
 
 
 
