@@ -44,24 +44,42 @@ This plot displays the poverty headcount ratio by country for those countries su
 
 This plot displays the poverty headcount ratio by country for those countries surveyed in 2012. As you can see by the graph, the plots are dispersed between every country except for the Democratic Republic of Congo. The Democratic Republic of Congo has a higher headcount ratio compared to the other countries. Also, there seems to be more men appearing than women, so men were more likely to be below the international poverty line than women are.
 
-
-
-
-
 For our Multi-Year Analysis, we selected four different countries with survey data spanning several years, in order to see if there were any changes throughout the years to the three variables we have been studying throughout our analysis: monthly food expenditures, monthly non-food expenditures, poverty headcount ratio. Our countries of study were Ethiopia, Malawi, Madagascar, and Senegal and we studied them in a similar way to how we did our previous analysis, which looked at different countries with data in the same survey year.
 
 For our analysis of Ethiopia, we first made a variable called dataEthiopia which we used to refine our dataset using filter() to only include data points representing Ethiopia. We then used ggplot, like our previous analysis, to answer three questions: 
-How did monthly food expenditures differ between people of different genders in Ethiopia during the years 2010 and 2012? 
+
+
+- How did monthly food expenditures between people of different genders in Ethiopia change between the years 2010 and 2012? 
 ![Ethiopia Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrEthiopia_Food.png)
 
+ Based on this graph, we can see that in 2010, women seem to spend a little bit more on food than men, but in 2012, you see a shift in the points, indicating that men and women bought about the same, with men spending a little bit more than women on average on food expenditures.
 
-How did monthly non-food expenditures differ between people of different genders in Ethiopia in 2010 and 2012?
+- How did monthly non-food expenditures differ between people of different genders in Ethiopia change between 2010 and 2012?
 ![Ethiopia Multi Year Analysis of Monthly Non-Food Expenditures](/writing/multiyrEthiopia_NFood.png)
 
+ Based on this graph, we can see that in 2010, women seem to spend more than men on non-food expenditures, but in 2012, like with food expenditures, we see that men tend to spend a little more than women, showing a shift from women doing the majority of the spending to men.
 
-How did the poverty headcount ratio differ between people of different genders in Ethiopia in 2000, 2010, 2012?
+- How did the poverty headcount ratio differ between people of different genders in Ethiopia change between 2000, 2010, 2012?
 ![Ethiopia Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrEthiopia_headct.png)
 
+ Based on this graph, we can see that in 200, men and women were pretty evenly dispersed between 30-80% of those populations living below the poverty line. In 2010, we see that poverty rates have dropped for both men and women, with men showing a bigger rise in poverty rate, with the highest point being at 50%. Then in 2012, we see an increase in poverty rates for both men and women, with women representing the highest levels of poverty. 
+
+Malawi
+
+- How did monthly food expenditures between people of different genders in Ethiopia change between the years 2010 and 2012? 
+![Malawi Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrMalawi_Food.png)
+
+ 
+
+- How did monthly non-food expenditures differ between people of different genders in Ethiopia change between 2010 and 2012?
+![Malawi Multi Year Analysis of Monthly Non-Food Expenditures](/writing/multiyrMalawi_NFood.png)
+
+ 
+
+- How did the poverty headcount ratio differ between people of different genders in Ethiopia change between 2000, 2010, 2012?
+![Malawi Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrMalawi_headct.png)
+
+ 
 
 
 
