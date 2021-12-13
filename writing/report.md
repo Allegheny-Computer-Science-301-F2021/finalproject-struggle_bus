@@ -116,7 +116,7 @@ Based on the graph, we can see that across all survey years, women tend to spend
 
 Based on this graph, we can see that across all survey years, men tend to experience higher rates of poverty than women. The range of poverty in 2001 was anywhere between 45%-100%, in 2005 was anywhere 5%-80%, and in 2011 was anywhere between 0%-75% of the population living below the poverty line.
 
-Conclusion
+# Conclusion
 
 Based on the graphs, women spend more money on monthly food expenditures than men do. Additionally, males and females spend the same amount of money on non food expenditures.  Based on the poverty headcount ratio graph, men are more likely to be below the international poverty line than women are. The multi-year analysis we completed for Ethiopia, Malawi, Madagascar, and Senegal all showed varying results, all showing improvements in the poverty rate and increases in both food and non-food expenditures. There were also shifts of influence from some spending being male dominated and shifting to being female dominated and vice versa, which is further detailed under each of the respective plots in the prior section.
 
