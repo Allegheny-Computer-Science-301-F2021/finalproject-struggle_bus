@@ -49,38 +49,64 @@ For our Multi-Year Analysis, we selected four different countries with survey da
 For our analysis of Ethiopia, we first made a variable called dataEthiopia which we used to refine our dataset using filter() to only include data points representing Ethiopia. We then used ggplot, like our previous analysis, to answer three questions: 
 
 
-- How did monthly food expenditures between people of different genders in Ethiopia change between the years 2010 and 2012? 
+- **How did monthly food expenditures between people of different genders in Ethiopia change between the years 2010 and 2012?** 
 ![Ethiopia Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrEthiopia_Food.png)
 
  Based on this graph, we can see that in 2010, women seem to spend a little bit more on food than men, but in 2012, you see a shift in the points, indicating that men and women bought about the same, with men spending a little bit more than women on average on food expenditures.
 
-- How did monthly non-food expenditures differ between people of different genders in Ethiopia change between 2010 and 2012?
+- **How did monthly non-food expenditures differ between people of different genders in Ethiopia change between 2010 and 2012?**
 ![Ethiopia Multi Year Analysis of Monthly Non-Food Expenditures](/writing/multiyrEthiopia_NFood.png)
 
  Based on this graph, we can see that in 2010, women seem to spend more than men on non-food expenditures, but in 2012, like with food expenditures, we see that men tend to spend a little more than women, showing a shift from women doing the majority of the spending to men.
 
-- How did the poverty headcount ratio differ between people of different genders in Ethiopia change between 2000, 2010, 2012?
+- **How did the poverty headcount ratio differ between people of different genders in Ethiopia change between 2000, 2010, 2012?**
 ![Ethiopia Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrEthiopia_headct.png)
 
  Based on this graph, we can see that in 200, men and women were pretty evenly dispersed between 30-80% of those populations living below the poverty line. In 2010, we see that poverty rates have dropped for both men and women, with men showing a bigger rise in poverty rate, with the highest point being at 50%. Then in 2012, we see an increase in poverty rates for both men and women, with women representing the highest levels of poverty. 
 
 Malawi
 
-- How did monthly food expenditures between people of different genders in Ethiopia change between the years 2010 and 2012? 
+- **How did monthly food expenditures between people of different genders in Malawi change between the years 2004 and 2010?** 
 ![Malawi Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrMalawi_Food.png)
 
- 
+ Based on this graph, we can see that in 2004, men and women spend about the same amount of food, with most points lying between $0-$20/month, but in 2010, we see the spending range increase to $15-$70+/month.
 
-- How did monthly non-food expenditures differ between people of different genders in Ethiopia change between 2010 and 2012?
+- **How did monthly non-food expenditures differ between people of different genders in Malawi change between 2004 and 2010?**
 ![Malawi Multi Year Analysis of Monthly Non-Food Expenditures](/writing/multiyrMalawi_NFood.png)
 
- 
+ Based on this graph, we can see that in both 2004 and 2012, men tend to spend more on non-food expenditures. We can also see the range of expenditures change from being anywhere between $0-$30/month in 2004 and increasing to $0-$100/month in 2010.
 
-- How did the poverty headcount ratio differ between people of different genders in Ethiopia change between 2000, 2010, 2012?
+- **How did the poverty headcount ratio differ between people of different genders in Malawi change between 1998, 2004, and 2010?**
 ![Malawi Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrMalawi_headct.png)
 
- 
+ Based on this graph, we can see that across all of the years portrayed, that women tend to experience higher rates of poverty than men. In 1998, the range of people living under the poverty line was anywhere between 40% to 100%. In 2004, this range changes to 65%-100%. In 2010, you see the range experience a bit of a decrease, with points lying between 0%-95%.
 
+Madagascar
+
+- **How did monthly food expenditures between people of different genders in Madagascar change between the years 2004 and 2010?** 
+![Madagascar Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrMadagascar_Food.png)
+
+
+- **How did monthly non-food expenditures differ between people of different genders in Madagascar change between 2004 and 2010?**
+![Madagascar Multi Year Analysis of Monthly Non-Food Expenditures](/writing/multiyrMadagascar_NFood.png)
+
+
+- **How did the poverty headcount ratio differ between people of different genders in Madagascar change between 1998, 2004, and 2010?**
+![Madagascar Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrMadagascar_headct.png)
+
+
+Senegal
+
+- **How did monthly food expenditures between people of different genders in Senegal change between the years 2004 and 2010?** 
+![Senegal Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrSenegal_Food.png)
+
+
+- **How did monthly non-food expenditures differ between people of different genders in Senegal change between 2004 and 2010?**
+![Madagascar Multi Year Analysis of Monthly Non-Food Expenditures](/writing/multiyrSenegal_NFood.png)
+
+
+- **How did the poverty headcount ratio differ between people of different genders in Senegal change between 1998, 2004, and 2010?**
+![Madagascar Multi Year Analysis of Monthly Food Expenditures](/writing/multiyrSenegal_headct.png)
 
 
 Conclusion

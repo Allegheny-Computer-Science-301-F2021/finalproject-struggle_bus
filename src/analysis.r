@@ -162,7 +162,7 @@ dataMalawi <- dat %>% select(country, year, MPOV08_FOOD, FPOV08_FOOD, MPOV08_NFO
 
 View(dataMalawi)
 
-# How did monthly food expenditures differ between people of different genders in Ethiopia during the years 2010 and 2012?
+# How did monthly food expenditures differ between people of different genders in Malawi during the years 2010 and 2012?
 ggplot(data = dataMalawi) + geom_point(mapping = aes(x = year, y = MPOV08_FOOD), color = "blue") +
   geom_point(mapping=aes(x=year, y = FPOV08_FOOD), color = "red") + xlim(2002, 2011) +
   labs(subtitle = "For 2004 and 2010",
