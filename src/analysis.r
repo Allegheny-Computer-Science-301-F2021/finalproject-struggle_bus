@@ -185,6 +185,35 @@ ggplot(data = dataMalawi) + geom_point(mapping = aes(x = year, y = MPOV08_PT190)
        x = "Year", title = "Poverty Headcount Ratio (%) in Malawi by Gender")
 
 
+##########
+# Madagascar
+##########
+
+dataMadagascar <- dat %>% select(country, year, MPOV08_FOOD, FPOV08_FOOD, MPOV08_NFOOD, FPOV08_NFOOD, MPOV08_PT190, FPOV08_PT190) %>% filter(country == "Madagascar")
+
+View(dataMadagascar)
+
+# How did monthly food expenditures differ between people of different genders in Ethiopia during the years 2010 and 2012?
+ggplot(data = dataMadagascar) + geom_point(mapping = aes(x = year, y = MPOV08_FOOD), color = "blue") +
+  geom_point(mapping=aes(x=year, y = FPOV08_FOOD), color = "red") +
+  labs(subtitle = "For 2001, 2005, and 2010",
+       y = "Monthly Food Expenditure in 2011 PPP$", 
+       x = "Year", title = "Monthly Food Expenditures in Madagascar by Gender")
+
+# How did monthly non-food expenditures differ between people of different genders in Ethiopia in 2010 and 2012?
+ggplot(data = dataMadagascar) + geom_point(mapping = aes(x = year, y = MPOV08_NFOOD), color = "blue") +
+  geom_point(mapping=aes(x=year, y = FPOV08_NFOOD), color = "red") +
+  labs(subtitle = "For 2001, 2005, and 2010",
+       y = "Monthly Non-Food Expenditure in 2011 PPP$", 
+       x = "Year", title = "Monthly Non-Food Expenditures in Madagascar by Gender")
+
+# How did the poverty headcount ratio differ between people of different genders in Ethiopia in 2000, 2010, 2012?
+
+ggplot(data = dataMadagascar) + geom_point(mapping = aes(x = year, y = MPOV08_PT190), color = "blue") +
+  geom_point(mapping=aes(x=year, y = FPOV08_PT190), color = "red") + 
+  labs(subtitle = "For 2001, 2005, and 2010",
+       y = "Poverty Headcount Ratio (%)", 
+       x = "Year", title = "Poverty Headcount Ratio (%) in Madagascar by Gender")
 
 
 
