@@ -11,7 +11,7 @@ For our final project for Data Analytics, we originally had wanted to focus our 
 
 The title of our new data set is **[Harmonized Male/ Female and Urban/Rural Subnational Expenditure, Poverty, and Inequality Indicators at 2011 PPP $1.90/dat and $3.10/day for Africa South of the Sahara]** (https://www.ifpri.org/publication/harmonized-malefemale-and-urbanrural-subnational-expenditure-poverty-and-inequality), coming from [Harvest Choice] (https://www.ifpri.org/project/harvestchoice). This dataset calculates poverty based on a ” comparison between household per-capita consumption expenditure and the $1.90 and $3.10/day poverty lines expressed in international equivalent purchasing power parity (PPP) dollars (in 2011)”.
 
-With this new data set, we are looking to answer the question of how rates of poverty (poverty headcount ratio, poverty gap, and poverty headcount) and spending (monthly per capita expenditures, food expenditures, and non food expenditures) differ based on gender across different African countries.
+With this new data set, we are looking to answer the question of how rates of poverty (poverty headcount ratio) and spending (food expenditures, and non food expenditures) differ based on gender across different African countries.
 
 ## Code Analysis
 
